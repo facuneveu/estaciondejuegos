@@ -254,3 +254,16 @@ a {
         height: auto;
     }
 }
+.texto {
+    color: #fff; /* Blanco puro */
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 1);
+}
+
+.texto2 {
+    color: #fff;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 1);
+}
+.barra{
+    color: #fff;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 1);
+}

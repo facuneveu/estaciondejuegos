@@ -58,7 +58,7 @@ a {
 .texto {
     margin: 0,0,0,5px;
     padding: 20px;
-    color: white;   
+    color: rgb(196, 196, 196);   
     font-size: 60px;
     display: inline-block;
     border-radius: 10px;
@@ -68,7 +68,7 @@ a {
     margin: 0px 0 0 0;
     padding: 0,0,10px,0;
     font-size: 40px;
-    color: white;
+    color: rgb(197, 197, 197);
     display: block;
     border-radius: 10px;
     

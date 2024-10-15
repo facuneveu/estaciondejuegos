@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+    background-image: url(logo.jpeg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    list-style: none;
+}
+
+.navegacion {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.navegacion__enlace {
+    padding: 15px;
+    color: lightgrey;
+    font-size: 25px;
+}
+
+.navegacion__enlace:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.titulo {
+    color: white;
+    font-size: 48px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.caja_texto {
+    padding: 50px;
+    margin: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.texto {
+    margin: 0,0,0,5px;
+    padding: 20px;
+    color: white;   
+    font-size: 60px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.texto2 {
+    margin: 0px 0 0 0;
+    padding: 0,0,10px,0;
+    font-size: 40px;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    
+
+}
+
+.titulo2, .galeria__titulo {
+    text-align: center;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+.parrafo1 {
+    margin-left: 20px;
+    font-family: 'PT Sans', sans-serif;
+    display: block;
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+}
+
+.video1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video2 {
+    margin-left: 0px;
+}
+
+.seccion1, .galeria {
+    padding: 30px 20px 70px 20px;
+}
+
+.seccion1__texto {
+    text-align: center;
+}
+
+.galeria {
+    background-color: rgb(173, 154, 141);
+}
+
+.galeria__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria__titulo {
+    margin: 0 0 40px 0;
+}
+
+.galeria__caja {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 300px; /* Aumenta el ancho de los cuadrados */
+    height: 300px; /* Aumenta el alto de los cuadrados */
+    overflow: hidden; /* Recorta la imagen si es más grande */
+}
+
+.galeria__caja:hover {
+    transform: scale(1.1);
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene las imágenes centradas y recortadas proporcionalmente */
+}
+
+.footer {
+    background-color: black;
+    height: 50px;
+    color: aliceblue;
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Ajustes Responsive para Tablets */
+@media (max-width: 1024px) {
+    .titulo {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .navegacion__enlace {
+        font-size: 10px; /* Ajusta tamaño de enlaces de navegación */
+    }
+
+    .galeria__caja {
+        width: 250px;
+        height: 250px; /* Reduce tamaño de las cajas en la galería */
+    }
+
+    .texto {
+        font-size: 50px;
+    }
+
+    .texto2 {
+        font-size: 35px;
+    }
+
+    .parrafo1 {
+        font-size: 18px;
+    }
+}
+
+/* Ajustes Responsive para Móviles */
+@media (max-width: 768px) {
+    .header {
+        height: 60vh; /* Reduce la altura de la cabecera */
+    }
+
+    .barra {
+        flex-direction: column; /* Navegación en columna */
+    }
+
+    .navegacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 30px; /* Reduce más el tamaño del título */
+    }
+
+    .navegacion__enlace {
+        font-size: 18px; /* Ajusta tamaño de enlaces de navegación */
+    }
+
+    .caja_texto {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .texto {
+        font-size: 40px; /* Ajusta tamaño de texto */
+        padding: 10px;
+    }
+
+    .texto2 {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .galeria__flex {
+        flex-direction: column; /* Distribuye en columna */
+    }
+
+    .galeria__caja {
+        width: 100%;
+        max-width: 350px; /* Ajusta tamaño de las cajas */
+        height: auto; /* Ajusta altura automáticamente */
+        
+    }
+
+    .footer {
+        font-size: 30px;
+    }
+}
+
+/* Ajustes Responsive para Móviles Pequeños */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 24px;
+    }
+
+    .texto {
+        font-size: 32px;
+    }
+
+    .texto2 {
+        font-size: 24px;
+    }
+
+    .galeria__caja {
+        width: 90%; /* Asegura que las imágenes ocupen el 90% de la pantalla */
+        height: auto;
+    }
+}
